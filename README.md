@@ -104,4 +104,7 @@ python train.py
 - Integration with real estate applications.
 
 ---
-
+## Model File
+The trained model file is too large for GitHub
+Download it from Google Drive:
+https://drive.google.com/file/d/1QZTpDHumaX7lXfz0ve5Wwn7vPqzJvCxV/view?usp=sharing
