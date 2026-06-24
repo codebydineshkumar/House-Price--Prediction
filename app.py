@@ -2,7 +2,14 @@ import streamlit as st
 import pickle
 import pandas as pd
 
-# Load model
+import os
+import gdown
+
+if not os.path.exists("house_price_model.pkl"):
+    file_id = "1QZTpDHumaX7lXfz0ve5Wwn7vPqzJvCxV"
+    url = f"https://drive.google.com/uc?id={file_id}"
+    gdown.download(url, "house_price_model.pkl", quiet=False)
+
 model = pickle.load(open("house_price_model.pkl", "rb"))
 
 st.title("House Price Prediction")
